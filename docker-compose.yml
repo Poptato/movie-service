@@ -5,7 +5,7 @@ services:
     ports:
       - 4005:8080
 
-  movie-service:
+  show-service:
     build: .
     working_dir: /usr/app
     depends_on:
@@ -14,3 +14,4 @@ services:
       - 4000:4000
     environment:
       - DB_HOST=db
+    command: ["npm", "run", "test"]

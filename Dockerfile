@@ -3,4 +3,4 @@ WORKDIR /usr/app
 COPY . .
 RUN npm install --silent
 EXPOSE 80
-CMD ["npm", "run", "test"]
+CMD ["npm", "run", "start"]
