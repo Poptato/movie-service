@@ -1,0 +1,133 @@
+2017-09-02T19:08:15.907975000 0.111278s notice: Recursively removing directory /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/tmp
+2017-09-02T19:08:15.909307000 0.112614s notice: Initializing directory /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data
+2017-09-02T19:08:15.909376000 0.112678s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/i331547/Projects/Poptato/movie-service/rethinkdb_data' did not already exist or is empty.)
+2017-09-02T19:08:15.909403000 0.112706s notice: Running rethinkdb 2.3.5 (CLANG 7.3.0 (clang-703.0.31))...
+2017-09-02T19:08:15.913032000 0.116335s notice: Running on Darwin 16.5.0 x86_64
+2017-09-02T19:08:15.913059000 0.116362s notice: Loading data from directory /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data
+2017-09-02T19:08:16.063858000 0.267206s info: Automatically using cache size of 1362 MB
+2017-09-02T19:08:16.064247000 0.267594s notice: Listening for intracluster connections on port 29015
+2017-09-02T19:08:16.065324000 0.268671s notice: Listening for client driver connections on port 28015
+2017-09-02T19:08:16.065413000 0.268760s notice: Listening for administrative HTTP connections on port 8080
+2017-09-02T19:08:16.065414000 0.268762s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-09-02T19:08:16.065417000 0.268764s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-09-02T19:08:16.065418000 0.268766s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-09-02T19:08:16.065421000 0.268769s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-09-02T19:08:16.065424000 0.268772s notice: Server ready, "TLVM33984885A_twj" 008faeec-6d83-41e0-8d29-6a953c492b3a
+2017-09-02T19:08:16.132888000 0.336236s warn: Problem when checking for new versions of RethinkDB: HTTP request to update.rethinkdb.com failed.
+2017-09-02T19:08:20.354280000 4.557719s info: Table 8019a296-5c5c-468a-918f-2e1103372faa: Starting a new Raft election for term 1.
+2017-09-02T19:08:20.354740000 4.558183s info: Table 8019a296-5c5c-468a-918f-2e1103372faa: Added replica on this server.
+2017-09-02T19:08:20.354839000 4.558277s info: Table 9e13dffb-3c3c-43b4-820c-e25010e9678f: Starting a new Raft election for term 1.
+2017-09-02T19:08:20.354976000 4.558415s info: Table 9e13dffb-3c3c-43b4-820c-e25010e9678f: Added replica on this server.
+2017-09-02T19:08:20.370124000 4.573562s info: Table e8085932-66fc-4c0a-be3d-9e2f06475496: Starting a new Raft election for term 1.
+2017-09-02T19:08:20.370324000 4.573762s info: Table e8085932-66fc-4c0a-be3d-9e2f06475496: Added replica on this server.
+2017-09-02T19:08:20.418572000 4.622010s info: Table 3a54fb76-d83b-437b-96b8-2aa279d3f552: Starting a new Raft election for term 1.
+2017-09-02T19:08:20.418937000 4.622375s info: Table 3a54fb76-d83b-437b-96b8-2aa279d3f552: Added replica on this server.
+2017-09-02T19:08:20.441201000 4.644639s info: Table 8019a296-5c5c-468a-918f-2e1103372faa: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:08:20.441292000 4.644730s info: Table 9e13dffb-3c3c-43b4-820c-e25010e9678f: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:08:20.458822000 4.662261s info: Table e8085932-66fc-4c0a-be3d-9e2f06475496: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:08:20.458948000 4.662386s info: Table 3a54fb76-d83b-437b-96b8-2aa279d3f552: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:08:20.970443000 5.173881s info: Table e8085932-66fc-4c0a-be3d-9e2f06475496: Configuration is changing.
+2017-09-02T19:08:20.970697000 5.174135s info: Table e8085932-66fc-4c0a-be3d-9e2f06475496: Configuration is changing.
+2017-09-02T19:08:21.284530000 5.487968s info: Table 8019a296-5c5c-468a-918f-2e1103372faa: Configuration is changing.
+2017-09-02T19:08:21.284672000 5.488110s info: Table 8019a296-5c5c-468a-918f-2e1103372faa: Configuration is changing.
+2017-09-02T19:08:21.314929000 5.518367s info: Table 9e13dffb-3c3c-43b4-820c-e25010e9678f: Configuration is changing.
+2017-09-02T19:10:03.418105000 107.624020s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/3a54fb76-d83b-437b-96b8-2aa279d3f552
+2017-09-02T19:10:03.418112000 107.624026s info: Table 3a54fb76-d83b-437b-96b8-2aa279d3f552: Deleted the table.
+2017-09-02T19:10:03.452973000 107.658888s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/8019a296-5c5c-468a-918f-2e1103372faa
+2017-09-02T19:10:03.452980000 107.658895s info: Table 8019a296-5c5c-468a-918f-2e1103372faa: Deleted the table.
+2017-09-02T19:10:03.479127000 107.685042s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/9e13dffb-3c3c-43b4-820c-e25010e9678f
+2017-09-02T19:10:03.479135000 107.685049s info: Table 9e13dffb-3c3c-43b4-820c-e25010e9678f: Deleted the table.
+2017-09-02T19:10:03.506941000 107.712856s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/e8085932-66fc-4c0a-be3d-9e2f06475496
+2017-09-02T19:10:03.506949000 107.712864s info: Table e8085932-66fc-4c0a-be3d-9e2f06475496: Deleted the table.
+2017-09-02T19:10:42.623819000 146.830678s info: Table bc02cc08-17ac-4d61-8fe4-db7d64f83bea: Starting a new Raft election for term 1.
+2017-09-02T19:10:42.632304000 146.839163s info: Table bc02cc08-17ac-4d61-8fe4-db7d64f83bea: Added replica on this server.
+2017-09-02T19:10:42.632314000 146.839173s info: Table 182c1c34-0c76-4897-b274-26444d2217d7: Starting a new Raft election for term 1.
+2017-09-02T19:10:42.632567000 146.839426s info: Table 182c1c34-0c76-4897-b274-26444d2217d7: Added replica on this server.
+2017-09-02T19:10:42.632772000 146.839631s info: Table 820acf8b-c6d4-4429-8e43-3aed9238972a: Starting a new Raft election for term 1.
+2017-09-02T19:10:42.632959000 146.839818s info: Table 820acf8b-c6d4-4429-8e43-3aed9238972a: Added replica on this server.
+2017-09-02T19:10:42.678840000 146.885699s info: Table e23993a0-d725-49e8-9955-104a1b3e0dec: Starting a new Raft election for term 1.
+2017-09-02T19:10:42.678971000 146.885830s info: Table e23993a0-d725-49e8-9955-104a1b3e0dec: Added replica on this server.
+2017-09-02T19:10:42.697380000 146.904239s info: Table bc02cc08-17ac-4d61-8fe4-db7d64f83bea: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:10:42.697423000 146.904282s info: Table 182c1c34-0c76-4897-b274-26444d2217d7: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:10:42.710761000 146.917620s info: Table 820acf8b-c6d4-4429-8e43-3aed9238972a: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:10:42.710805000 146.917663s info: Table e23993a0-d725-49e8-9955-104a1b3e0dec: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:10:43.526985000 147.733889s info: Table bc02cc08-17ac-4d61-8fe4-db7d64f83bea: Configuration is changing.
+2017-09-02T19:10:43.527024000 147.733927s info: Table bc02cc08-17ac-4d61-8fe4-db7d64f83bea: Configuration is changing.
+2017-09-02T19:10:43.551982000 147.758886s info: Table 182c1c34-0c76-4897-b274-26444d2217d7: Configuration is changing.
+2017-09-02T19:10:43.585828000 147.792732s info: Table e23993a0-d725-49e8-9955-104a1b3e0dec: Configuration is changing.
+2017-09-02T19:10:43.586127000 147.793031s info: Table e23993a0-d725-49e8-9955-104a1b3e0dec: Configuration is changing.
+2017-09-02T19:11:16.843340000 181.051054s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/182c1c34-0c76-4897-b274-26444d2217d7
+2017-09-02T19:11:16.843347000 181.051061s info: Table 182c1c34-0c76-4897-b274-26444d2217d7: Deleted the table.
+2017-09-02T19:11:16.878107000 181.085821s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/820acf8b-c6d4-4429-8e43-3aed9238972a
+2017-09-02T19:11:16.878114000 181.085827s info: Table 820acf8b-c6d4-4429-8e43-3aed9238972a: Deleted the table.
+2017-09-02T19:11:16.907027000 181.114741s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/bc02cc08-17ac-4d61-8fe4-db7d64f83bea
+2017-09-02T19:11:16.907035000 181.114749s info: Table bc02cc08-17ac-4d61-8fe4-db7d64f83bea: Deleted the table.
+2017-09-02T19:11:16.932730000 181.140444s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/e23993a0-d725-49e8-9955-104a1b3e0dec
+2017-09-02T19:11:16.932738000 181.140451s info: Table e23993a0-d725-49e8-9955-104a1b3e0dec: Deleted the table.
+2017-09-02T19:11:28.970470000 193.178453s info: Table d264a787-eca4-467c-a46a-aa41cd87153e: Starting a new Raft election for term 1.
+2017-09-02T19:11:28.970648000 193.178631s info: Table d264a787-eca4-467c-a46a-aa41cd87153e: Added replica on this server.
+2017-09-02T19:11:28.988872000 193.196855s info: Table c1211375-5197-45ae-ab32-88797a56d49e: Starting a new Raft election for term 1.
+2017-09-02T19:11:28.989151000 193.197134s info: Table c1211375-5197-45ae-ab32-88797a56d49e: Added replica on this server.
+2017-09-02T19:11:29.035083000 193.243066s info: Table 1f115d5c-681a-4ad9-9a87-d5b954be3671: Starting a new Raft election for term 1.
+2017-09-02T19:11:29.035437000 193.243420s info: Table 1f115d5c-681a-4ad9-9a87-d5b954be3671: Added replica on this server.
+2017-09-02T19:11:29.046150000 193.254134s info: Table 279a070c-c034-4498-a19b-8bf8dc222fe1: Starting a new Raft election for term 1.
+2017-09-02T19:11:29.046394000 193.254377s info: Table 279a070c-c034-4498-a19b-8bf8dc222fe1: Added replica on this server.
+2017-09-02T19:11:29.065701000 193.273685s info: Table d264a787-eca4-467c-a46a-aa41cd87153e: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:11:29.065780000 193.273762s info: Table c1211375-5197-45ae-ab32-88797a56d49e: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:11:29.080012000 193.287995s info: Table 1f115d5c-681a-4ad9-9a87-d5b954be3671: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:11:29.080053000 193.288036s info: Table 279a070c-c034-4498-a19b-8bf8dc222fe1: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:11:29.875554000 194.083582s info: Table c1211375-5197-45ae-ab32-88797a56d49e: Configuration is changing.
+2017-09-02T19:11:29.930906000 194.138934s info: Table 1f115d5c-681a-4ad9-9a87-d5b954be3671: Configuration is changing.
+2017-09-02T19:11:29.931021000 194.139049s info: Table 1f115d5c-681a-4ad9-9a87-d5b954be3671: Configuration is changing.
+2017-09-02T19:11:29.947397000 194.155425s info: Table 279a070c-c034-4498-a19b-8bf8dc222fe1: Configuration is changing.
+2017-09-02T19:11:29.947726000 194.155753s info: Table 279a070c-c034-4498-a19b-8bf8dc222fe1: Configuration is changing.
+2017-09-02T19:13:49.208269000 333.419575s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/1f115d5c-681a-4ad9-9a87-d5b954be3671
+2017-09-02T19:13:49.208280000 333.419586s info: Table 1f115d5c-681a-4ad9-9a87-d5b954be3671: Deleted the table.
+2017-09-02T19:13:49.240121000 333.451427s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/279a070c-c034-4498-a19b-8bf8dc222fe1
+2017-09-02T19:13:49.240129000 333.451435s info: Table 279a070c-c034-4498-a19b-8bf8dc222fe1: Deleted the table.
+2017-09-02T19:13:49.268243000 333.479550s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/c1211375-5197-45ae-ab32-88797a56d49e
+2017-09-02T19:13:49.268260000 333.479566s info: Table c1211375-5197-45ae-ab32-88797a56d49e: Deleted the table.
+2017-09-02T19:13:49.295270000 333.506576s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/d264a787-eca4-467c-a46a-aa41cd87153e
+2017-09-02T19:13:49.295277000 333.506583s info: Table d264a787-eca4-467c-a46a-aa41cd87153e: Deleted the table.
+2017-09-02T19:13:53.060727000 337.272122s info: Table ee070ca5-d772-4cb4-9123-7d02a87ba977: Starting a new Raft election for term 1.
+2017-09-02T19:13:53.060915000 337.272310s info: Table ee070ca5-d772-4cb4-9123-7d02a87ba977: Added replica on this server.
+2017-09-02T19:13:53.090062000 337.301457s info: Table 6d547944-7707-40be-bb67-a08e672908e7: Starting a new Raft election for term 1.
+2017-09-02T19:13:53.090206000 337.301601s info: Table 6d547944-7707-40be-bb67-a08e672908e7: Added replica on this server.
+2017-09-02T19:13:53.161308000 337.372703s info: Table d7b1bfd2-b7c0-4505-8531-c38a7e13ee66: Starting a new Raft election for term 1.
+2017-09-02T19:13:53.161547000 337.372942s info: Table d7b1bfd2-b7c0-4505-8531-c38a7e13ee66: Added replica on this server.
+2017-09-02T19:13:53.169413000 337.380808s info: Table 54956c1b-8caf-4d44-a84d-4d4f8da261e8: Starting a new Raft election for term 1.
+2017-09-02T19:13:53.169590000 337.380985s info: Table 54956c1b-8caf-4d44-a84d-4d4f8da261e8: Added replica on this server.
+2017-09-02T19:13:53.189144000 337.400540s info: Table ee070ca5-d772-4cb4-9123-7d02a87ba977: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:13:53.189250000 337.400646s info: Table 6d547944-7707-40be-bb67-a08e672908e7: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:13:53.204674000 337.416069s info: Table d7b1bfd2-b7c0-4505-8531-c38a7e13ee66: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:13:53.204737000 337.416132s info: Table 54956c1b-8caf-4d44-a84d-4d4f8da261e8: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:13:53.929771000 338.141211s info: Table ee070ca5-d772-4cb4-9123-7d02a87ba977: Configuration is changing.
+2017-09-02T19:13:54.082189000 338.293629s info: Table 54956c1b-8caf-4d44-a84d-4d4f8da261e8: Configuration is changing.
+2017-09-02T19:13:54.082252000 338.293692s info: Table 54956c1b-8caf-4d44-a84d-4d4f8da261e8: Configuration is changing.
+2017-09-02T19:13:54.103020000 338.314460s info: Table d7b1bfd2-b7c0-4505-8531-c38a7e13ee66: Configuration is changing.
+2017-09-02T19:13:54.103289000 338.314729s info: Table d7b1bfd2-b7c0-4505-8531-c38a7e13ee66: Configuration is changing.
+2017-09-02T19:16:49.226282000 513.441844s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/54956c1b-8caf-4d44-a84d-4d4f8da261e8
+2017-09-02T19:16:49.226289000 513.441851s info: Table 54956c1b-8caf-4d44-a84d-4d4f8da261e8: Deleted the table.
+2017-09-02T19:16:49.256355000 513.471917s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/6d547944-7707-40be-bb67-a08e672908e7
+2017-09-02T19:16:49.256361000 513.471923s info: Table 6d547944-7707-40be-bb67-a08e672908e7: Deleted the table.
+2017-09-02T19:16:49.284283000 513.499845s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/d7b1bfd2-b7c0-4505-8531-c38a7e13ee66
+2017-09-02T19:16:49.284290000 513.499852s info: Table d7b1bfd2-b7c0-4505-8531-c38a7e13ee66: Deleted the table.
+2017-09-02T19:16:49.314324000 513.529886s notice: Removing file /Users/i331547/Projects/Poptato/movie-service/rethinkdb_data/ee070ca5-d772-4cb4-9123-7d02a87ba977
+2017-09-02T19:16:49.314338000 513.529900s info: Table ee070ca5-d772-4cb4-9123-7d02a87ba977: Deleted the table.
+2017-09-02T19:16:54.936245000 519.151941s info: Table a0e9b303-d92a-4ade-a835-f4eb80940cdf: Starting a new Raft election for term 1.
+2017-09-02T19:16:54.936386000 519.152082s info: Table a0e9b303-d92a-4ade-a835-f4eb80940cdf: Added replica on this server.
+2017-09-02T19:16:54.944133000 519.159829s info: Table 84907beb-7453-4d0c-8311-6356f12aaa2f: Starting a new Raft election for term 1.
+2017-09-02T19:16:54.944468000 519.160164s info: Table 84907beb-7453-4d0c-8311-6356f12aaa2f: Added replica on this server.
+2017-09-02T19:16:54.944523000 519.160219s info: Table ec137b6c-14f3-48f0-9456-7fe0af9e7c4b: Starting a new Raft election for term 1.
+2017-09-02T19:16:54.944655000 519.160351s info: Table ec137b6c-14f3-48f0-9456-7fe0af9e7c4b: Added replica on this server.
+2017-09-02T19:16:54.963647000 519.179343s info: Table f42e6acb-2786-4861-87d5-c567b80e6dd4: Starting a new Raft election for term 1.
+2017-09-02T19:16:54.963776000 519.179472s info: Table f42e6acb-2786-4861-87d5-c567b80e6dd4: Added replica on this server.
+2017-09-02T19:16:54.981810000 519.197506s info: Table a0e9b303-d92a-4ade-a835-f4eb80940cdf: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:16:54.981861000 519.197557s info: Table 84907beb-7453-4d0c-8311-6356f12aaa2f: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:16:55.004764000 519.220461s info: Table ec137b6c-14f3-48f0-9456-7fe0af9e7c4b: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:16:55.004814000 519.220509s info: Table f42e6acb-2786-4861-87d5-c567b80e6dd4: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-02T19:16:55.546671000 519.762412s info: Table a0e9b303-d92a-4ade-a835-f4eb80940cdf: Configuration is changing.
+2017-09-02T19:16:55.546694000 519.762434s info: Table a0e9b303-d92a-4ade-a835-f4eb80940cdf: Configuration is changing.
+2017-09-02T19:16:55.560716000 519.776457s info: Table 84907beb-7453-4d0c-8311-6356f12aaa2f: Configuration is changing.
+2017-09-02T19:16:55.930569000 520.146310s info: Table ec137b6c-14f3-48f0-9456-7fe0af9e7c4b: Configuration is changing.
+2017-09-02T19:16:55.930889000 520.146630s info: Table ec137b6c-14f3-48f0-9456-7fe0af9e7c4b: Configuration is changing.
