@@ -1,2 +1,2 @@
 # Movie
-> Poptato's movie micro-service
+> Poptato's movies management micro-service
