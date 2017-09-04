@@ -13,7 +13,7 @@ MovieController.get("/", async (req, res) => {
 
         res.send(movies);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -23,7 +23,7 @@ MovieController.post("/", async (req, res) => {
         let created = await movie.saveAll();
         res.send(created);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -36,7 +36,7 @@ MovieController.get("/:movieId", async (req, res) => {
 
         res.send(movie);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -45,7 +45,7 @@ MovieController.delete("/:movieId", (req, res) => {
         let deleted = Movie.get(req.params.movieId).delete().run();
         res.send(deleted);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -59,7 +59,7 @@ MovieController.post("/:movieId/cast/:celebId", async (req, res) => {
         let updated = await movie.saveAll();
         res.send(updated);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -73,7 +73,7 @@ MovieController.delete("/:movieId/cast/:celebId", async (req, res) => {
         let updated = await movie.saveAll();
         res.send(updated);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -87,7 +87,7 @@ MovieController.post("/:movieId/awards/:oscarId", async (req, res) => {
         let updated = await movie.saveAll();
         res.send(updated);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -101,7 +101,7 @@ MovieController.delete("/:movieId/awards/:oscarId", async (req, res) => {
         let updated = await movie.saveAll();
         res.send(updated);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 

@@ -11,7 +11,7 @@ OscarController.get("/", async (req, res) => {
 
         res.send(oscars);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -21,7 +21,7 @@ OscarController.post("/", async (req, res) => {
         let created = await oscar.saveAll();
         res.send(created);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
@@ -34,7 +34,7 @@ OscarController.get("/:oscarId", async (req, res) => {
 
         res.send(oscar);
     } catch (e) {
-        res.status(500).send(e);
+        res.status(500).send({message: e.toString()});
     }
 });
 
