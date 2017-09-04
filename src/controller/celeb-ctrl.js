@@ -40,7 +40,7 @@ CelebrityController.get("/:celebId", async (req, res) => {
     }
 });
 
-CelebrityController.delete("/:celebId", (req, res) => {
+CelebrityController.delete("/:celebId", async (req, res) => {
     try {
         let deleted = Celebrity.get(req.params.celebId).delete().run();
         res.send(deleted);
