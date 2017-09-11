@@ -5,7 +5,11 @@
   "main": "./src/server.js",
   "scripts": {
     "start": "node ./src/server.js",
-    "test": "node ./test/assets/initDb"
+    "start:preloaded": "npm run preload && npm run start",
+    "preload": "node -e \"require('./test/assets/db-init').go()\"",
+    "test:unit": "mocha test/unit/**/*.spec.js",
+    "test:api": "mocha test/api/**/*.spec.js",
+    "test": "npm run test:unit && npm run test:api"
   },
   "author": "Idan A. <idan5x@live.com> (idan5x.github.io)",
   "license": "MIT",
@@ -17,7 +21,20 @@
     "thinky": "^2.3.8"
   },
   "devDependencies": {
+    "@types/chai": "^4.0.4",
     "@types/express": "^4.0.37",
-    "@types/request": "^2.0.3"
+    "@types/mocha": "^2.2.41",
+    "@types/request": "^2.0.3",
+    "@types/request-promise-native": "^1.0.6",
+    "@types/sinon": "^2.3.3",
+    "@types/supertest": "^2.0.3",
+    "chai": "^4.1.2",
+    "gulp-env": "^0.4.0",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^3.5.0",
+    "nyc": "^11.2.1",
+    "sinon": "^3.1.0",
+    "sinon-chai": "^2.13.0",
+    "supertest": "^3.0.0"
   }
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "6410731e-2631-40f9-a0f0-93ab98b50529",
+    "category": "Best Potato",
+    "ceremony": "Sun Feb 01 2015 00:00:00 GMT+0200 (IST)",
+    "movieId": "4fc42ea3-9918-4f69-b27c-a899c5c47af4",
+    "celebId": "54b0d91d-8c5f-40cb-83da-152160ba7492"
+  },
+  {
+    "id": "122d56bf-5c12-4746-939a-6792abcd333f",
+    "category": "Best Director",
+    "ceremony": "Wed Jun 04 2014 00:00:00 GMT+0300 (IDT)",
+    "movieId": "4fc42ea3-9918-4f69-b27c-a899c5c47af4",
+    "celebId": "b4ebd9b6-11e0-4a24-b6c8-cf86202aea49"
+  },
+  {
+    "id": "3212f796-119f-4c24-bfa4-436e78f47ce2",
+    "category": "Best Actress",
+    "ceremony": "Sun Apr 03 2016 00:00:00 GMT+0300 (IDT)",
+    "movieId": "0b7abbb4-c286-4e5a-a2d8-1927295c99be",
+    "celebId": "51afa916-2f8e-4753-81d2-2d9ae4490af4"
+  },
+  {
+    "id": "d7413242-c51e-48a8-97eb-f4b73b43e125",
+    "category": "Best, just best",
+    "ceremony": "Sun Apr 03 2016 00:00:00 GMT+0300 (IDT)",
+    "movieId": "8c5bf4a8-6e50-4b6e-8a4c-a23256a9d20f",
+    "celebId": "1f3793a0-e54d-474c-a9b0-0e3ba1cd0a66"
+  }
+]

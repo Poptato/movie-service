@@ -6,18 +6,18 @@ const MovieController = require("./controller/movie-ctrl");
 const CelebrityController = require("./controller/celeb-ctrl");
 const OscarController  = require("./controller/oscar-ctrl");
 
-let app = new Express();
+let server = new Express();
 let port = process.env.PORT || 4000;
 
-app.use(bodyParser.json());
+server.use(bodyParser.json());
 
-app.use("/info", InfoController);
-app.use("/movies", MovieController);
-app.use("/celebs", CelebrityController);
-app.use("/oscars", OscarController);
+server.use("/info", InfoController);
+server.use("/movies", MovieController);
+server.use("/celebs", CelebrityController);
+server.use("/oscars", OscarController);
 
-app.listen(port, () => {
+server.listen(port, () => {
    console.log(`Movie service is running on port ${port}`);
 });
 
-module.exports = app;
+module.exports = server;
