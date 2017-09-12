@@ -1,0 +1,193 @@
+#%RAML 1.0
+title: Poptato Movie Service
+version: v1
+
+# =================
+#     LIBRARIES
+# =================
+uses:
+  Common: ../node_modules/poptato-common-raml/common.lib.raml
+
+
+# ==============
+#     TYPES
+# ==============
+types:
+  Name:
+    type: string
+    pattern: ^[A-Z][a-z]+(-[A-Z][a-z]+)*$
+    minLength: 2
+    examples:
+      OnePartName: Amit
+      MultipartName: Ben-Zeev
+
+  Genere:
+    type: string
+    enum: [COMEDY, DRAMA, HORROR, ROMANCE, SCIFI]
+
+  Movie:
+    type: object
+    properties:
+      id:
+        type: integer
+      title:
+        description: The title of the movie
+        type: string
+        minLength: 1
+        example: Avengers - Age of Ultron
+      duration:
+        description: The duration of the movie, in minutes
+        type: integer
+        minimum: 1
+      cast:
+        description: The actors/actresses appearing in the movie
+        type: Actor[]
+      director:
+        description: The director who directed the movie
+        type: Director
+      generes:
+        description: The generes of the movie
+        type: Genere[]
+        example:
+          - ROMANCE
+          - COMEDY
+
+  Oscar:
+    description: An Oscar award
+    type: object
+    properties:
+      id:
+        type: integer
+      category:
+        description: The category of the award
+        type: string
+        #TODO: convert to enum
+      awarded:
+        description: The person on won the award
+        type: Celebrity
+        required: false
+      forMovie:
+        displayName: for movie
+        description: The movie for which the award is given
+        type: Movie
+        required: false
+      ceremony:
+        type: date-only
+
+  Celebrity:
+    type: object
+    properties:
+      id:
+        type: integer
+      firstName:
+        displayName: first name
+        description: The person's private name
+        type: Name
+        maxLength: 18
+      lastName:
+        displayName: last name
+        description: The person's surname
+        type: Name
+        maxLength: 24
+      gender:
+        type: string
+        enum: [MALE, FEMALE]
+      birthday:
+        description: The person's birth-date
+        type: Common.CustomDate
+        occuredInPast: true
+        example: 2013-05-07
+
+  Actor:
+    type: Celebrity
+    properties:
+      appearances:
+        description: The movies the actor appears in
+        type: Movie[]
+
+  Director:
+    type: Celebrity
+    properties:
+      works:
+        description: Movies directed by the director
+        type: Movie[]
+
+
+# =================
+#     ENDPOINTS
+# =================
+/movies:
+  type:
+    Common.PagedCollection:
+      typeName: Movie
+  /{movieId}:
+    type:
+      Common.Item:
+        typeName: Movie
+    /cast:
+      type:
+        Common.PagedCollection:
+          typeName: Actor
+    /director:
+      type:
+        Common.Item:
+          typeName: Director
+    /oscars:
+      type:
+        Common.Collection:
+          typeName: Oscar
+    /generes:
+      type:
+         Common.Collection:
+           typeName: Genere
+
+/actors:
+  type:
+    Common.PagedCollection:
+      typeName: Actor
+  /{actorId}:
+    type:
+      Common.Item:
+        typeName: Actor
+    /appearances:
+      type:
+        Common.PagedCollection:
+          typeName: Movie
+    /oscars:
+      type:
+        Common.Collection:
+          typeName: Oscar
+
+/directors:
+  type:
+    Common.PagedCollection:
+      typeName: Director
+  /{directorId}:
+    type:
+      Common.Item:
+        typeName: Director
+    /works:
+      type:
+        Common.PagedCollection:
+          typeName: Movie
+    /oscars:
+      type:
+        Common.Collection:
+          typeName: Oscar
+
+/oscars:
+  type:
+    Common.PagedCollection:
+      typeName: Oscar
+  /{oscarId}:
+    type:
+      Common.Item:
+        typeName: Oscar
+    /awarded:
+      type:
+        Common.Item:
+          typeName: Person
+    /forMovie:
+      type:
+        Common.Item:
+          typeName: Movie
