@@ -7,7 +7,7 @@ This documentation directory is also exposed by the service on runtime under `<s
 
 ## Running
 ### Natively
-First, make sure you have NodeJS 8.1.0 or higher, RethinkDB 2.3.5 or higher.
+First, make sure you have [NodeJS](https://nodejs.org/en/) 8.1.0 or higher, [RethinkDB](https://www.rethinkdb.com/) 2.3.5 or higher.
 Then, in terminal, navigate to a target folder and run:
 ```shell
 $ git clone https://github.com/Poptato/movie-service.git
@@ -17,7 +17,7 @@ $ npm start
 ```
 
 ### Docker Standalone
-First, make sure you have [Docker](https://docker.com) higher.
+First, make sure you have [Docker](https://docker.com) higher.  
 Then, in terminal, navigate to a target folder and run:
 ```shell
 $ git clone https://github.com/Poptato/movie-service.git
